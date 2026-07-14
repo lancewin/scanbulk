@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permissions</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: #000;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: 500;
+            color: #00A69A;
+        }
+        .permission-card {
+            background-color: #f8f9fa;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border-left: 4px solid #00A69A;
+        }
+        .permission-title {
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Permissions</h1>
+    
+    <p>This app only requests necessary permissions when you actively use related features:</p>
+    
+    <div class="permission-card">
+        <div class="permission-title">Camera</div>
+        <ul>
+            <li><span class="highlight">When</span>: Scanning feature</li>
+            <li><span class="highlight">Purpose</span>: Access camera for real-time scanning</li>
+            <li><span class="highlight">Privacy</span>: Frames are processed locally only, never uploaded to any server</li>
+        </ul>
+    </div>
+    
+    <div class="permission-card">
+        <div class="permission-title">Photo Library (Read)</div>
+        <ul>
+            <li><span class="highlight">When</span>: Image scanning, album selection</li>
+            <li><span class="highlight">Purpose</span>: Select images from album for QR/barcode recognition</li>
+            <li><span class="highlight">Privacy</span>: Only reads images you actively select; recognition happens entirely on-device, no images or personal data uploaded to servers</li>
+        </ul>
+    </div>
+    
+    <div class="permission-card">
+        <div class="permission-title">Photo Library (Write)</div>
+        <ul>
+            <li><span class="highlight">When</span>: Saving generated code images</li>
+            <li><span class="highlight">Purpose</span>: Save generated QR/barcode images to album</li>
+            <li><span class="highlight">Privacy</span>: Only writes app-generated images; operation is entirely on-device, no image data uploaded to servers</li>
+        </ul>
+    </div>
+    
+    <div class="permission-card">
+        <div class="permission-title">Network</div>
+        <ul>
+            <li><span class="highlight">When</span>: Subscription purchase</li>
+            <li><span class="highlight">Purpose</span>: Connect to App Store for payment</li>
+            <li><span class="highlight">Privacy</span>: Used only for payment functionality</li>
+        </ul>
+    </div>
+    
+    <p style="margin-top: 20px;">All permissions are optional and can be turned off at any time in system Settings.</p>
+</body>
+</html>
